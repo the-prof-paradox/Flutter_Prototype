@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'userInput.dart';
+import 'paymentGateway.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -77,13 +78,14 @@ class _LoginPageState extends State<LoginPage> {
                     ],
                   )
                   );
-                // Navigator.push(context, MaterialPageRoute(builder: (context) => Input()));
               }),
               SizedBox(
               height: 130,
             ),
             InkWell(
               onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Payments()));
+                
               },
               child: Text('New User? Create Account'),
             ),

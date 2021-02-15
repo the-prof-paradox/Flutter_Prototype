@@ -31,6 +31,7 @@ dependencies:
   image_picker:
   gallery_saver: ^2.0.1
   share:
+  upi_pay: ^0.2.0
 
 dev_dependencies:
   flutter_test:
